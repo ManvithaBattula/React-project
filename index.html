@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <!-- Displaying hello world from html -->
+        <h1>Hello World !</h1>
+    </div>
+        <!-- Displaying Hello world using Javascript -->
+        <script>
+            const element = document.createElement("h1");
+            element.innerHTML=("Hello World from Javascript");
+            const id = document.getElementById("root");
+            id.appendChild(element);
+        </script>
+        <!-- Diplaying Hello world from react -->
+        <!-- Injecting react into your project -->
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <!-- Hello world program using  -->
+        <script src="./App.js"></script>
+
+</body>
+</html>
